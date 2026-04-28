@@ -86,9 +86,9 @@
     <!-- 1. Navbar -->
     <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4" :class="scrolly > 50 ? 'glass-nav' : 'bg-transparent'">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="logo.png" alt="Naturals Salem Logo" class="w-12 h-12 rounded-full object-cover border-2 border-accent/50 shadow-lg shadow-accent/20 hover:scale-110 transition-transform">
-                <div class="text-white font-playfair font-bold text-xl tracking-tight">NATURALS <span class="text-accent text-xs block tracking-[0.3em] font-sans -mt-1">SALEM</span></div>
+            <div class="flex items-center gap-2 md:gap-3">
+                <img src="logo.png" alt="Naturals Salem Logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-accent/50 shadow-lg shadow-accent/20 hover:scale-110 transition-transform">
+                <div class="text-white font-playfair font-bold text-lg md:text-xl tracking-tight">NATURALS <span class="text-accent text-[10px] md:text-xs block tracking-[0.3em] font-sans -mt-1 md:-mt-1">SALEM</span></div>
             </div>
             
             <div class="hidden md:flex gap-10 text-xs font-bold tracking-[0.2em] uppercase">
@@ -99,7 +99,7 @@
                 <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
             </div>
 
-            <a target="_blank" href="https://wa.me/919150111660?text=Hello%20Naturals%20Salem!%20I%20would%20like%20to%20book%20an%20appointment." class="bg-accent text-burgundy-900 px-6 py-3 rounded-full text-xs font-bold hover:bg-accent-dark transition-all transform hover:scale-105 shadow-lg shadow-accent/20">
+            <a target="_blank" href="https://wa.me/919150111660?text=Hello%20Naturals%20Salem!%20I%20would%20like%20to%20book%20an%20appointment." class="bg-accent text-burgundy-900 px-4 py-2 md:px-6 md:py-3 rounded-full text-[10px] md:text-xs font-bold hover:bg-accent-dark transition-all transform hover:scale-105 shadow-lg shadow-accent/20">
                 BOOK SLOT
             </a>
         </div>
@@ -115,7 +115,7 @@
                 <span class="inline-block text-accent font-bold tracking-[0.4em] uppercase text-xs mb-6 border-b border-accent/30 pb-2">
                     Premium Unisex Salon & Spa
                 </span>
-                <h1 class="text-6xl md:text-8xl font-playfair leading-[1.1] mb-8">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-playfair leading-[1.1] mb-8">
                     Define Your <br> <span class="accent-gradient-text italic font-bold">Aura.</span>
                 </h1>
                 <p class="text-white/70 text-lg md:text-xl mb-12 max-w-xl font-light leading-relaxed">
@@ -155,8 +155,8 @@
     </section>
 
     <!-- 3. First Section (About) -->
-    <section id="about" class="py-32 bg-transparent relative overflow-hidden">
-        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+    <section id="about" class="py-20 lg:py-32 bg-transparent relative overflow-hidden">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div class="relative max-w-[400px] mx-auto" data-aos="fade-right">
                 <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" alt="About Naturals Salon" class="w-full rounded-3xl shadow-2xl object-cover aspect-[4/5]">
                 <div class="absolute -top-10 -left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl -z-10"></div>
@@ -168,7 +168,7 @@
                 <p class="text-white/70 text-lg mb-10 leading-relaxed">
                     Located in the heart of Salem at Ramakrishna Road, Naturals is more than just a salon. We are a sanctuary of style where hygiene meets luxury. Our senior stylists are trained to deliver the famous "Naturals Glow" using only international premium products.
                 </p>
-                <div class="grid grid-cols-2 gap-8 mb-12">
+                <div class="grid grid-cols-2 gap-4 sm:gap-8 mb-12">
                     <div class="border-l border-accent/30 pl-6">
                         <h5 class="text-accent text-4xl font-playfair font-bold mb-2">24+</h5>
                         <p class="text-white/50 text-xs tracking-widest uppercase">Years Experience</p>
@@ -186,7 +186,7 @@
     </section>
 
     <!-- 4. Second Section (Services) -->
-    <section id="services" class="py-32 bg-charcoal/30 backdrop-blur-sm" x-data="{ 
+    <section id="services" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm" x-data="{ 
         tab: 'Hair',
         categories: ['Hair', 'Skin', 'Bridal', 'Spa'],
         services: {
@@ -216,7 +216,7 @@
             </div>
 
             <!-- Tabs -->
-            <div class="flex justify-center gap-4 mb-16 overflow-x-auto pb-4 no-scrollbar">
+            <div class="flex justify-start md:justify-center gap-4 mb-16 overflow-x-auto pb-4 no-scrollbar px-2">
                 <template x-for="cat in categories">
                     <button @click="tab = cat" 
                         class="px-12 py-3 rounded-full border transition-all font-bold tracking-widest text-xs uppercase"
@@ -245,7 +245,7 @@
     </section>
 
     <!-- 5. Third Section (Reviews) -->
-    <section id="reviews" class="py-32 bg-transparent">
+    <section id="reviews" class="py-20 lg:py-32 bg-transparent">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-playfair" data-aos="fade-right">Client <span class="italic text-accent">Stories</span></h2>
@@ -303,12 +303,12 @@
     </section>
 
     <!-- 6. Fourth Section (Contact Us) -->
-    <section id="contact" class="py-32 bg-charcoal/30 backdrop-blur-sm">
+    <section id="contact" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm">
         <div class="container mx-auto px-6">
-            <div class="bg-charcoal-light rounded-[3rem] p-10 md:p-20 border border-accent/10 overflow-hidden relative">
+            <div class="bg-charcoal-light rounded-[3rem] p-8 md:p-20 border border-accent/10 overflow-hidden relative">
                 <div class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px]"></div>
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 relative z-10">
                     <div data-aos="fade-right">
                         <h2 class="text-5xl font-playfair mb-8">Let's Get <br> <span class="text-accent italic">You Glowing.</span></h2>
                         <div class="space-y-10">
@@ -357,7 +357,7 @@
                                 <label class="text-[10px] font-bold tracking-widest text-white/30 uppercase ml-2 mb-2 block">Message</label>
                                 <textarea rows="4" class="w-full bg-charcoal border border-white/10 rounded-2xl px-6 py-4 focus:border-accent outline-none transition-all text-sm" placeholder="Preferred date & time..."></textarea>
                             </div>
-                            <button class="w-fit px-12 bg-accent text-burgundy-900 font-bold py-5 rounded-2xl shadow-xl shadow-accent/10 hover:bg-accent-dark transition-all transform hover:scale-[1.01] tracking-[0.2em] text-xs">
+                            <button class="w-full sm:w-fit px-12 bg-accent text-burgundy-900 font-bold py-5 rounded-2xl shadow-xl shadow-accent/10 hover:bg-accent-dark transition-all transform hover:scale-[1.01] tracking-[0.2em] text-xs">
                                 SEND BOOKING REQUEST
                             </button>
                         </form>
@@ -373,8 +373,8 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a target="_blank" href="https://wa.me/919150111660?text=Hello%20Naturals%20Salem!%20I%20would%20like%20to%20know%20more." class="fixed bottom-10 right-10 w-16 h-16 bg-burgundy-700 text-white rounded-full flex items-center justify-center shadow-2xl z-[100] hover:scale-110 transition-transform">
-        <i class="fab fa-whatsapp text-3xl"></i>
+    <a target="_blank" href="https://wa.me/919150111660?text=Hello%20Naturals%20Salem!%20I%20would%20like%20to%20know%20more." class="fixed bottom-6 right-6 md:bottom-10 md:right-10 w-14 h-14 md:w-16 md:h-16 bg-burgundy-700 text-white rounded-full flex items-center justify-center shadow-2xl z-[100] hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-2xl md:text-3xl"></i>
     </a>
 
     <script>
