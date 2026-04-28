@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden w-full max-w-[100vw]">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@
         * { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-charcoal text-white font-dmsans antialiased overflow-x-hidden relative" x-data="{ scrolly: 0 }" @scroll.window="scrolly = window.pageYOffset">
+<body class="bg-charcoal text-white font-dmsans antialiased overflow-x-hidden w-full max-w-[100vw] relative" x-data="{ scrolly: 0 }" @scroll.window="scrolly = window.pageYOffset">
     <!-- Fixed Global Background Image -->
     <div class="fixed inset-0 z-[-1] pointer-events-none">
         <div class="absolute inset-0 bg-charcoal/80"></div>
@@ -186,7 +186,7 @@
     </section>
 
     <!-- 4. Second Section (Services) -->
-    <section id="services" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm" x-data="{ 
+    <section id="services" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm relative overflow-hidden" x-data="{ 
         tab: 'Hair',
         categories: ['Hair', 'Skin', 'Bridal', 'Spa'],
         services: {
@@ -245,7 +245,7 @@
     </section>
 
     <!-- 5. Third Section (Reviews) -->
-    <section id="reviews" class="py-20 lg:py-32 bg-transparent">
+    <section id="reviews" class="py-20 lg:py-32 bg-transparent relative overflow-hidden">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-playfair" data-aos="fade-right">Client <span class="italic text-accent">Stories</span></h2>
@@ -303,7 +303,7 @@
     </section>
 
     <!-- 6. Fourth Section (Contact Us) -->
-    <section id="contact" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm">
+    <section id="contact" class="py-20 lg:py-32 bg-charcoal/30 backdrop-blur-sm relative overflow-hidden">
         <div class="container mx-auto px-6">
             <div class="bg-charcoal-light rounded-[3rem] p-8 md:p-20 border border-accent/10 overflow-hidden relative">
                 <div class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px]"></div>
