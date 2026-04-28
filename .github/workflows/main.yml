@@ -18,14 +18,9 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      # REMOVE this block if no package.json exists
-      - name: Build
-        run: |
-          npm install
-          npm run build
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist   # change if needed
+          path: ./   # your site root
 
       - uses: actions/deploy-pages@v4
